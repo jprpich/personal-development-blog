@@ -1,6 +1,7 @@
 ---
 title: seminars
 date: 2018-01-11 20:02:34
+icon: fa-superpowers
 ---
 
 ### Jim Rohn Personal Development Seminar California

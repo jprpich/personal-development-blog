@@ -1,6 +1,7 @@
 ---
 title: movies
 date: 2018-01-11 19:56:32
+icon: fa-file-video-o
 ---
 
 ### Jobs 

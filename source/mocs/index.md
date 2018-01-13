@@ -1,6 +1,7 @@
 ---
 title: mocs
 date: 2018-01-11 20:00:54
+icon: fa-graduation-cap 
 ---
 
 ### Javascript Understanding The Weird Parts
