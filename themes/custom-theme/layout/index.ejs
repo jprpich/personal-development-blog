@@ -1,0 +1,14 @@
+
+<% for(var value in site.data.myData) { %>
+  <p><%- site.data.myData[value] %></p>
+<% } %>
+
+
+<img src="<%- gravatar('joshuaprpich@gmail.com') %>" alt="">
+<hr>
+<%- time(Date.now(), 'h:mm:ss a') %>
+
+
+<% site.pages.forEach(function(post){ %>
+  <li><a href="<%- post.path%>"><%- post.title%></a></li>
+<% }) %>

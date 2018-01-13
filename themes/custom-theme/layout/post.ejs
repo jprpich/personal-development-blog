@@ -1,0 +1,14 @@
+<h1><%- page.title %></h1>
+<p><%- page.date %></p>
+<p><%- page.author %></p>
+
+<% if(page.author) { %>
+  Joshua Prpich is the author , he's the best
+
+<% } else { %>
+  This author is not defined yet.
+<% } %>
+
+
+<hr>
+<%- page.content %>
