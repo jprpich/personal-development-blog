@@ -1,5 +1,5 @@
 ---
-title: program-a-day
+title: JavaScript-program-a-day
 date: 2018-01-11 20:28:50
 tags:
 icon: fa-code
