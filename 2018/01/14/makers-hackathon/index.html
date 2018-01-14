@@ -10,8 +10,9 @@
 
     <!--Description-->
     
-        <meta name="description" content="A program a day keeps lazyness away! These are the JS examples I followed and learned from JS understanding the weird parts videos.
-The first program ">
+        <meta name="description" content="““A hackathon, a hacker neologism, is an event when programmers meet to do collaborative computer programming.””
+Wikipedia
+Make It Real student gradua">
     
 
     <!--Author-->
@@ -21,7 +22,7 @@ The first program ">
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="JavaScript-program-a-day"/>
+        <meta property="og:title" content="makers-hackathon"/>
     
 
     <!--Open Graph Description-->
@@ -43,7 +44,7 @@ The first program ">
 
     <!-- Title -->
     
-    <title>JavaScript-program-a-day - Hexo</title>
+    <title>makers-hackathon - Hexo</title>
 
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
@@ -129,8 +130,8 @@ The first program ">
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">JavaScript-program-a-day</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2018-01-11</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">makers-hackathon</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2018-01-14</p>
         </div>
     </div>
 
@@ -148,16 +149,36 @@ The first program ">
                 <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
                     <!-- Tags Vertical -->
                     
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/personal-development-blog/tags/ruby/">#ruby</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/js/">#js</a>
+                            </div>
+                        </div>
+                    
 
                     <!-- Main Post Content -->
-                    <p>A program a day keeps lazyness away! These are the JS examples I followed and learned from JS understanding the weird parts videos.</p>
-<p>The first program I did was a Function Factory. </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">makeGreeting</span>(<span class="params">language</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">firstname, lastname</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (language === <span class="string">"en"</span>) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Hello '</span> + firstname + <span class="string">' '</span> + lastname)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (language === <span class="string">'es'</span>) &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Hola '</span> + firstname + <span class="string">' '</span> + lastname)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> greetEnglish = makeGreeting(<span class="string">'en'</span>)</span><br><span class="line"><span class="keyword">var</span> greetSpanish = makeGreeting(<span class="string">'es'</span>)</span><br><span class="line"></span><br><span class="line">greetEnglish(<span class="string">"joshua"</span>, <span class="string">"do"</span>)</span><br><span class="line">greetSpanish(<span class="string">"josue"</span>, <span class="string">"leguizamo"</span>)</span><br></pre></td></tr></table></figure>
-<p>The second program I made was and example to practice closures and callbacks.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHiLater</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> greeting = <span class="string">"Hi!"</span>;</span><br><span class="line"></span><br><span class="line">  setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(greeting)</span><br><span class="line">  &#125;, <span class="number">3000</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sayHiLater();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">tellMeWhenDone</span>(<span class="params">callback</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1000</span>; </span><br><span class="line">  <span class="keyword">var</span> b = <span class="number">2000</span>;</span><br><span class="line"></span><br><span class="line">  callback();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tellMeWhenDone(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"I am done!"</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tellMeWhenDone(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"All is done!"</span>)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
+                    <blockquote><p>““A hackathon, a hacker neologism, is an event when programmers meet to do collaborative computer programming.””</p>
+<footer><strong>Wikipedia</strong></footer></blockquote>
+<p>Make It Real student graduates will be organizing the next makers hackathon. Information about the hackathon will be posted in the near future. Please contact our organization committee if you want to participate!</p>
+<p>Organization Committee</p>
+<ul>
+<li>Ferney Medina |            | Will help with something</li>
+<li>Joshua Prpich | 3002171693 | Location Facilitator</li>
+<li>David Mejia.  |            | Inscriptions Helper</li>
+<li>Juan          |            | Hackathon Judge</li>
+<li>Angie Vanegas |            | Inscriptions Helper</li>
+<li>Leonardo Omaña|            | Will help with something</li>
+<li>Jairo Orjuela |            | Will help with something</li>
+</ul>
+<p><img src="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?auto=format&amp;fit=crop&amp;w=1385&amp;q=80" alt=""></p>
+<blockquote><p>“The word <strong>hackathon</strong> is a portmanteau of the words <strong>hack</strong> and <strong>marathon</strong>, where <strong>hack</strong> is used in the sense of playful, exploratory programming, not its alternate meaning as a reference to computer crime.” -Wikipedia</p>
+<footer><strong>Wikipedia</strong></footer></blockquote>
                     
                     <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/personal-development-blog/tags/ruby/">#ruby</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/js/">#js</a>
+                        </div>
                     
 
                     <!-- Comments -->
