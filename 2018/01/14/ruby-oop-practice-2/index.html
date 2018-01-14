@@ -10,7 +10,8 @@
 
     <!--Description-->
     
-        <meta name="description" content="I have recently been investing the topic of quick and efficient exercise routines. I mean what do you think is better intense workouts that last years">
+        <meta name="description" content="And once again. Here is another Ruby OOP practice program. This time it has todo do with printers and yes printing. 
+123456789101112131415161718192021">
     
 
     <!--Author-->
@@ -20,7 +21,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="exercise is cool!"/>
+        <meta property="og:title" content="ruby-oop-practice-2"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>exercise is cool! - Hexo</title>
+    <title>ruby-oop-practice-2 - Hexo</title>
 
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
@@ -128,14 +129,14 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">exercise is cool!</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2018-01-11</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">ruby-oop-practice-2</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2018-01-14</p>
         </div>
     </div>
 
     <!-- Icon -->
     <div class="relative w-100 mw8 center white dn dn-m db-ns">
-        <i class="header-icon fa fa-bicycle"></i>
+        <i class="header-icon fa fa-code"></i>
     </div>
 </div>
 
@@ -149,19 +150,20 @@
                     
                         <div class="tags-container-vertical">
                             <div class="tags-sub-container">
-                                <a class="fw3 ph1 dib" href="/personal-development-blog/tags/routines/">#routines</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/small/">#small</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/easy/">#easy</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/best/">#best</a>
+                                <a class="fw3 ph1 dib" href="/personal-development-blog/tags/ruby/">#ruby</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/oop/">#oop</a>
                             </div>
                         </div>
                     
 
                     <!-- Main Post Content -->
-                    <p>I have recently been investing the topic of quick and efficient exercise routines. I mean what do you think is better intense workouts that last years, months, or even days before you quit or small and easy exercise routines that will last for a life time?</p>
+                    <p>And once again. Here is another Ruby OOP practice program. This time it has todo do with printers and yes printing. </p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Printer</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">attr_accessor</span> <span class="symbol">:color</span>, <span class="symbol">:size</span>, <span class="symbol">:buttons</span>, <span class="symbol">:papers_printed</span>, <span class="symbol">:papers_scanned</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">initialize</span><span class="params">(color, size, buttons)</span></span></span><br><span class="line">    @papers_printed = <span class="number">0</span></span><br><span class="line">    @papers_scanned = <span class="number">0</span></span><br><span class="line">    @color = color</span><br><span class="line">    @size = size</span><br><span class="line">    @buttons = buttons</span><br><span class="line">  <span class="keyword">end</span> </span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">print</span></span></span><br><span class="line">    @papers_printed += <span class="number">1</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">scan</span></span></span><br><span class="line">    @papers_scanned += <span class="number">1</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># the hp printer</span></span><br><span class="line">hp_printer = Printer.new(<span class="string">"white"</span>, <span class="string">"45 inches"</span>, <span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">puts <span class="string">"Some info about the hp printer!"</span></span><br><span class="line">puts <span class="string">"The printer is of <span class="subst">#&#123;hp_printer.color&#125;</span> color!"</span></span><br><span class="line">puts <span class="string">"The printer is of size <span class="subst">#&#123;hp_printer.size&#125;</span>!"</span> </span><br><span class="line">puts <span class="string">"The printer has <span class="subst">#&#123;hp_printer.buttons&#125;</span> buttons!"</span></span><br><span class="line">puts <span class="string">"This printer has printed <span class="subst">#&#123;hp_printer.papers_printed&#125;</span> papers"</span></span><br><span class="line">hp_printer.print</span><br><span class="line">puts <span class="string">"This printer has printed <span class="subst">#&#123;hp_printer.papers_printed&#125;</span> papers"</span></span><br><span class="line">hp_printer.print</span><br><span class="line">puts <span class="string">"This printer has printed <span class="subst">#&#123;hp_printer.papers_printed&#125;</span> papers"</span></span><br><span class="line"></span><br><span class="line">puts <span class="string">"*"</span> * <span class="number">50</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># the sony printer</span></span><br><span class="line">sony_printer = Printer.new(<span class="string">"black"</span>, <span class="string">"34 inches"</span>, <span class="number">234</span>)</span><br><span class="line"></span><br><span class="line">puts <span class="string">"Some info about the sony_printer!"</span></span><br><span class="line">puts <span class="string">"The printer is of <span class="subst">#&#123;sony_printer.color&#125;</span> color!"</span></span><br><span class="line">puts <span class="string">"The printer is of size <span class="subst">#&#123;sony_printer.size&#125;</span>!"</span> </span><br><span class="line">puts <span class="string">"The printer has <span class="subst">#&#123;sony_printer.buttons&#125;</span> buttons!"</span></span><br><span class="line">puts <span class="string">"This printer has printed <span class="subst">#&#123;sony_printer.papers_printed&#125;</span> papers"</span></span><br><span class="line">puts <span class="string">"*"</span> * <span class="number">50</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># the end of the program!</span></span><br><span class="line">puts <span class="string">"So the hp printer has printed <span class="subst">#&#123;hp_printer.papers_printed&#125;</span> papers, while the sony printer has printed <span class="subst">#&#123;sony_printer.papers_printed&#125;</span> papers!"</span></span><br></pre></td></tr></table></figure>
 
                     
                     <!-- Tags Bottom -->
                     
                         <div class="tags-container-bottom">
-                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/personal-development-blog/tags/routines/">#routines</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/small/">#small</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/easy/">#easy</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/best/">#best</a>
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/personal-development-blog/tags/ruby/">#ruby</a> <a class="fw3 ph1 dib" href="/personal-development-blog/tags/oop/">#oop</a>
                         </div>
                     
 
@@ -190,30 +192,6 @@
                     <hr class="dn-l mw4 black-50 mt5" />
                     
                     <!-- Widget 2: Categories -->
-                    
-                        <div class="mt5 tc tl-l">
-    <h3>Categories</h3>
-    
-        <p>
-            <a href="/personal-development-blog/categories/mini-progress/">mini progress</a>
-        </p>
-    
-        <p>
-            <a href="/personal-development-blog/categories/mini-progress/2-minute-routines/">2 minute routines</a>
-        </p>
-    
-        <p>
-            <a href="/personal-development-blog/categories/goals/">goals</a>
-        </p>
-    
-        <p>
-            <a href="/personal-development-blog/categories/videos/">videos</a>
-        </p>
-    
-</div>
-
-
-                        <hr class="dn-l mw4 black-50 mt5" />
                     
 
                     <!-- Widget 3: Recent Posts -->
