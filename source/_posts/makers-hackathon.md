@@ -15,11 +15,14 @@ Organization Committee
 
 * Ferney Medina |            | Will help with something
 * Joshua Prpich | 3002171693 | Location Facilitator
-* David Mejia.  |            | Inscriptions Helper
-* Juan          |            | Hackathon Judge
+* David Mejia.  | 3228778066 | Inscriptions Helper
+* Juan Gomez    |            | Hackathon Judge
 * Angie Vanegas |            | Inscriptions Helper
-* Leonardo Omaña|            | Will help with something
+* Leonardo Omaña |            | Will help with something
 * Jairo Orjuela |            | Will help with something
+* Victor Soto.  |            | Will help with something
+* Jonathan      |            | Will help with something
+* Nicolás.      |            | Business Manager
 
 ![](https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?auto=format&fit=crop&w=1385&q=80)
 
